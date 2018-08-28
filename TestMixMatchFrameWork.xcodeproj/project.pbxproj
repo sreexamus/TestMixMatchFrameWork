@@ -8,12 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		945D11BF1FA7009600635C43 /* TestMixMatchFrameWork.h in Headers */ = {isa = PBXBuildFile; fileRef = 945D11BD1FA7009600635C43 /* TestMixMatchFrameWork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		945D11C71FA700AC00635C43 /* FirstObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 945D11C51FA700AC00635C43 /* FirstObjc.h */; };
+		945D11C81FA700AC00635C43 /* FirstObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 945D11C61FA700AC00635C43 /* FirstObjc.m */; };
+		945D11CB1FA700BD00635C43 /* SecondObjc.h in Headers */ = {isa = PBXBuildFile; fileRef = 945D11C91FA700BD00635C43 /* SecondObjc.h */; };
+		945D11CC1FA700BD00635C43 /* SecondObjc.m in Sources */ = {isa = PBXBuildFile; fileRef = 945D11CA1FA700BD00635C43 /* SecondObjc.m */; };
+		945D11CE1FA700CB00635C43 /* MySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 945D11CD1FA700CB00635C43 /* MySwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		945D11BA1FA7009600635C43 /* TestMixMatchFrameWork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TestMixMatchFrameWork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		945D11BD1FA7009600635C43 /* TestMixMatchFrameWork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestMixMatchFrameWork.h; sourceTree = "<group>"; };
 		945D11BE1FA7009600635C43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		945D11C51FA700AC00635C43 /* FirstObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstObjc.h; sourceTree = "<group>"; };
+		945D11C61FA700AC00635C43 /* FirstObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstObjc.m; sourceTree = "<group>"; };
+		945D11C91FA700BD00635C43 /* SecondObjc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondObjc.h; sourceTree = "<group>"; };
+		945D11CA1FA700BD00635C43 /* SecondObjc.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondObjc.m; sourceTree = "<group>"; };
+		945D11CD1FA700CB00635C43 /* MySwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +58,11 @@
 			children = (
 				945D11BD1FA7009600635C43 /* TestMixMatchFrameWork.h */,
 				945D11BE1FA7009600635C43 /* Info.plist */,
+				945D11C51FA700AC00635C43 /* FirstObjc.h */,
+				945D11C61FA700AC00635C43 /* FirstObjc.m */,
+				945D11C91FA700BD00635C43 /* SecondObjc.h */,
+				945D11CA1FA700BD00635C43 /* SecondObjc.m */,
+				945D11CD1FA700CB00635C43 /* MySwift.swift */,
 			);
 			path = TestMixMatchFrameWork;
 			sourceTree = "<group>";
@@ -60,6 +75,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				945D11BF1FA7009600635C43 /* TestMixMatchFrameWork.h in Headers */,
+				945D11C71FA700AC00635C43 /* FirstObjc.h in Headers */,
+				945D11CB1FA700BD00635C43 /* SecondObjc.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +112,7 @@
 				TargetAttributes = {
 					945D11B91FA7009600635C43 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +149,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				945D11C81FA700AC00635C43 /* FirstObjc.m in Sources */,
+				945D11CE1FA700CB00635C43 /* MySwift.swift in Sources */,
+				945D11CC1FA700BD00635C43 /* SecondObjc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,6 +271,7 @@
 		945D11C31FA7009600635C43 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -262,6 +284,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = new.sample.TestMixMatchFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -269,6 +294,7 @@
 		945D11C41FA7009600635C43 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -281,6 +307,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = new.sample.TestMixMatchFrameWork;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
